@@ -2,7 +2,9 @@
 
 :root{
     --cor-de-fundo: #EBECEE;
-    --branco: white;
+    --branco: #FFFFFF;
+    --laranja: #eb9b00;
+    --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     
 }
 
