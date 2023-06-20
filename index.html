@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <title>Alurabooks</title>
 </head>
 <body>
@@ -46,11 +47,12 @@
     </section>
 
     <section class="carrossel">
-        <h2 class="carrossel_titulo">Novos lançamentos</h2>
+        <h2 class="carrossel_titulo">Novos Lançamentos</h2>
 
-        <div class="swiper">
-            <div class="swiper-pagination"></div>
+    <div class="swiper">
+        <div class="swiper-pagination"></div>
 
+        <div class="swiper-wrapper">
             <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre Apache Kafka"></div>
             <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre Liderança"></div>
             <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre Javascript"></div>
@@ -62,7 +64,7 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
 
-        </div>
+    </div>
 
     </section>
 
@@ -71,10 +73,10 @@
     <script>
         const swiper = new Swiper('.swiper',{
             spaceBetween: 10,
-            slidesPerView 3,
+            slidesPerView: 3,
             pagination: {
-                el: 'swiper-pagination',
-                type: 'bullets'
+            el: 'swiper-pagination',
+            type: 'bullets'
             },
         });
     </script>
