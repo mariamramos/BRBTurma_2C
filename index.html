@@ -102,5 +102,62 @@
         </div>
     </div>
 
+
+
+    <section class="carrossel">
+        <h2 class="carrossel_titulo">Mais vendidos</h2>
+
+    <div class="swiper">
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre Apache Kafka"></div>
+            <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre Liderança"></div>
+            <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre Javascript"></div>
+            <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro sobre Front-end"></div>
+            <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre Portugol"></div>
+            <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Livro sobre Acessibilidade"></div>
+        </div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+    </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper1 = new Swiper('.swiper',{
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets'
+            },
+        });
+    </script>
+
+    <div class="card">
+        <div class="card__descrição">
+            <div class="descrição">
+                <img class="estrelinhas" src="img/Estrelinhas.svg" alt="Cinco estrelas">
+                <h3 class="descrição__titulo">Autora do Mês</h3>
+                <h2 class="descrição__titulo-livro">Juliana Agarikov</h2>
+                <p class="descrição__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+            </div>
+            
+            <img src="img/Juliana Agarikov.svg" class="descrição__imagem">
+        </div>
+        <div class="card__botões">
+            <ul class="botões">
+                <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar"></li>
+                <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar ao carrinho de compras"></li>
+            </ul>
+            <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+    </div>
+
     </body>
 </html>
