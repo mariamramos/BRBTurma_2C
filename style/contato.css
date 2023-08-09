@@ -33,6 +33,6 @@
 .contato__email::placeholder{
     font-family: var(--font-principal);
     color: var(--azul);
-    background: url(../img/envelope.svg)no-repeat;
+    background: url(../img/envelope.svg) no-repeat;
     padding-left: 2em; 
 }
